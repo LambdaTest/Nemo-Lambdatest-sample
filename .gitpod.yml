@@ -1,0 +1,3 @@
+tasks:
+  - init: npm install -g mocha
+    command: npx nemo -P chrome

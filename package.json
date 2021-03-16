@@ -1,0 +1,14 @@
+{
+  "name": "nemo-Lambdatest",
+  "version": "0.1.0",
+  "description": "An example module to run nemoJS tests on Lambdatest",
+  "keywords": [
+    "Nemo",
+    "selenium-webdriver"
+  ],
+  "author": "Lambdatest",
+  "dependencies": {
+    "nemo": "^3.0.0",
+    "nemo-view": "^1.2.0"
+  }
+}

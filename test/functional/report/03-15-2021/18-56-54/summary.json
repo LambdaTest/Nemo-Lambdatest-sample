@@ -1,0 +1,48 @@
+{
+	"totals": {
+		"total": 3,
+		"pass": 3,
+		"fail": 0
+	},
+	"instances": [
+		{
+			"tags": {
+				"profile": "chrome",
+				"reportFile": "/03-15-2021/18-56-54/profile!chrome/nemo-report.html",
+				"uid": "dea1e711-c0c6-43a0-9e39-c212d6f63398"
+			},
+			"duration": 25345,
+			"summary": {
+				"total": 1,
+				"pass": 1,
+				"fail": 0
+			}
+		},
+		{
+			"tags": {
+				"profile": "chrome_2",
+				"reportFile": "/03-15-2021/18-56-54/profile!chrome_2/nemo-report.html",
+				"uid": "ad6af026-533c-48ca-8201-a4a28c365271"
+			},
+			"duration": 26133,
+			"summary": {
+				"total": 1,
+				"pass": 1,
+				"fail": 0
+			}
+		},
+		{
+			"tags": {
+				"profile": "firefox",
+				"reportFile": "/03-15-2021/18-56-54/profile!firefox/nemo-report.html",
+				"uid": "06ba0e36-815a-4add-a0c9-83c4d5a77ee3"
+			},
+			"duration": 28067,
+			"summary": {
+				"total": 1,
+				"pass": 1,
+				"fail": 0
+			}
+		}
+	]
+}

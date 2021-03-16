@@ -1,0 +1,22 @@
+{
+	"totals": {
+		"total": 1,
+		"pass": 1,
+		"fail": 0
+	},
+	"instances": [
+		{
+			"tags": {
+				"profile": "firefox",
+				"reportFile": "/03-15-2021/18-47-36/profile!firefox/nemo-report.html",
+				"uid": "93e5c9b4-09a0-4f32-9791-7015f6696f17"
+			},
+			"duration": 17690,
+			"summary": {
+				"total": 1,
+				"pass": 1,
+				"fail": 0
+			}
+		}
+	]
+}

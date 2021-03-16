@@ -1,0 +1,22 @@
+{
+	"totals": {
+		"total": 1,
+		"pass": 1,
+		"fail": 0
+	},
+	"instances": [
+		{
+			"tags": {
+				"profile": "chrome",
+				"reportFile": "/03-16-2021/13-08-24/profile!chrome/nemo-report.html",
+				"uid": "7590af0a-115f-4d4a-b5d9-5e3d3b54c0c5"
+			},
+			"duration": 25391,
+			"summary": {
+				"total": 1,
+				"pass": 1,
+				"fail": 0
+			}
+		}
+	]
+}

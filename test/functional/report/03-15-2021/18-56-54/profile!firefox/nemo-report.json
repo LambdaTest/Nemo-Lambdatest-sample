@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-15T13:26:54.591Z",
+    "end": "2021-03-15T13:27:22.493Z",
+    "duration": 27902,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bd40a657-afcd-4c54-8d7b-e095bd716a5f",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [
+        {
+          "title": "\"before all\" hook",
+          "fullTitle": "\"before all\" hook",
+          "timedOut": false,
+          "duration": 0,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "if (Suite.tests.length > 0) {\n  return createNemo()\n    .then(bindNemo.bind(this));\n}\nreturn;",
+          "err": {},
+          "uuid": "7103c129-52c4-4fd2-9ae2-3aa977be67e6",
+          "parentUUID": "bd40a657-afcd-4c54-8d7b-e095bd716a5f",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "afterHooks": [
+        {
+          "title": "\"after all\" hook: destroyNemo",
+          "fullTitle": "\"after all\" hook: destroyNemo",
+          "timedOut": false,
+          "duration": 0,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "log('destroyNemo: called');\nif (this.nemo) {\n  if (this.nemo.driver) {\n    log('Quitting nemo driver instance');\n    return this.nemo.driver.quit()\n      .then(function () {\n        log('destroyNemo: Quit driver');\n        return Promise.resolve();\n      });\n  }\n  log('Nemo instance does not have a driver to quit');\n}",
+          "err": {},
+          "uuid": "e9cb0c1d-5bf7-4a2c-9dde-f2cd26e39c3f",
+          "parentUUID": "bd40a657-afcd-4c54-8d7b-e095bd716a5f",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "51dd7bd4-4c02-44c7-8863-1a2d919c36ce",
+          "title": "@firstTest@",
+          "fullFile": "/Users/surendranagaura/suruWorkspace/nemoTest/test/functional/nemo.test.js",
+          "file": "/test/functional/nemo.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook",
+              "fullTitle": "@firstTest@ \"before all\" hook",
+              "timedOut": false,
+              "duration": 8544,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "if (Suite.tests.length > 0) {\n  return createNemo()\n    .then(bindNemo.bind(this));\n}\nreturn;",
+              "err": {},
+              "uuid": "c4cc1f64-a374-49c0-af4b-fff7d80531c1",
+              "parentUUID": "51dd7bd4-4c02-44c7-8863-1a2d919c36ce",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: destroyNemo",
+              "fullTitle": "@firstTest@ \"after all\" hook: destroyNemo",
+              "timedOut": false,
+              "duration": 1416,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "log('destroyNemo: called');\nif (this.nemo) {\n  if (this.nemo.driver) {\n    log('Quitting nemo driver instance');\n    return this.nemo.driver.quit()\n      .then(function () {\n        log('destroyNemo: Quit driver');\n        return Promise.resolve();\n      });\n  }\n  log('Nemo instance does not have a driver to quit');\n}",
+              "err": {},
+              "uuid": "3af1df60-dc10-44eb-863d-ec643551ff06",
+              "parentUUID": "51dd7bd4-4c02-44c7-8863-1a2d919c36ce",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should load a website",
+              "fullTitle": "@firstTest@ should load a website",
+              "timedOut": false,
+              "duration": 17927,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "this.nemo.driver.manage().timeouts().implicitlyWait(10000)\nawait this.nemo.driver.get(this.nemo.data.baseUrl);\nawait this.nemo.driver.get(\"https://lambdatest.github.io/sample-todo-app/\");\nawait this.nemo.view._waitVisible('name:li1', 10000);\nthis.nemo.view._find('name:li1').click();\nthis.nemo.view._find('name:li2').click();\nthis.nemo.view._find('id:sampletodotext').sendKeys(\"Yey, Let's add it to list\");\nthis.nemo.view._find('id:addbutton').click();\nawait this.nemo.view._waitVisible('name:li6', 10000);",
+              "err": {},
+              "uuid": "da033b35-2532-4e47-be4e-38cb24194555",
+              "parentUUID": "51dd7bd4-4c02-44c7-8863-1a2d919c36ce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "da033b35-2532-4e47-be4e-38cb24194555"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 17927,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 180000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "nemo-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "5.0.0"
+    },
+    "marge": {
+      "options": {
+        "quiet": true,
+        "reportDir": "/Users/surendranagaura/suruWorkspace/nemoTest/test/functional/report/03-15-2021/18-56-54/profile!firefox",
+        "reportFilename": "nemo-report",
+        "assetsDir": "/Users/surendranagaura/suruWorkspace/nemoTest/test/functional/report/mochawesomeAssets"
+      },
+      "version": "4.1.0"
+    }
+  }
+}
