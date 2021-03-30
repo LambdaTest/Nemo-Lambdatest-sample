@@ -1,8 +1,14 @@
 const assert = require('assert');
+var status = "";
 describe('@firstTest@', function () {
-  it('should load a website', async function () {
-    this.nemo.driver.manage().timeouts().implicitlyWait(5000)
+  before(async function () {
     this.nemo.driver.executeScript("lambda-name=sample-todo-app-test");
+  });
+  after(async function () {
+    this.nemo.driver.executeScript("lambda-status=" + status);  
+  });
+  it('should load a website', async function () {
+    this.nemo.driver.manage().timeouts().implicitlyWait(5000);
     await this.nemo.driver.get(this.nemo.data.baseUrl);
     await this.nemo.driver.get("https://lambdatest.github.io/sample-todo-app/");
     await this.nemo.view._waitVisible('name:li1', 5000);
@@ -13,10 +19,10 @@ describe('@firstTest@', function () {
     await this.nemo.view._waitVisible('name:li6', 5000);
     var page_title = this.nemo.driver.getTitle();
     if (page_title === "Sample page - lambdatest.com"){
-      this.nemo.driver.executeScript("lambda-status=" + "passed");
+      status = "passed";
     }
     else {
-      this.nemo.driver.executeScript("lambda-status=" + "failed");
+      status = "failed";
     }
   });
 });
