@@ -51,7 +51,7 @@ $ npm init
 $ npm install --save-dev nemo
 ```
 
-4. To run your Selenium tests with NemoJS, you would need to set your LambdaTest username and access key in the environment variables. To get it, visit [Automation Dashboard](https://automation.lambdatest.com/) and click on the Key button from the top-right.
+4. To run your Selenium tests with NemoJS, you would need to set your LambdaTest username and access key in the environment variables. To get it, visit [Automation Dashboard](https://automation.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=Nemo-Lambdatest-sample) and click on the Key button from the top-right.
 
 **For Windows:**
 
@@ -106,7 +106,7 @@ Visit the following links to learn more about LambdaTest's features, setup and t
 
 ## LambdaTest Community :busts_in_silhouette:
 
-The [LambdaTest Community](https://community.lambdatest.com/) allows people to interact with tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe 🌎
+The [LambdaTest Community](https://community.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=Nemo-Lambdatest-sample) allows people to interact with tech enthusiasts. Connect, ask questions, and learn from tech-savvy people. Discuss best practises in web development, testing, and DevOps with professionals from across the globe 🌎
 
 ## What's New At LambdaTest ❓
 
@@ -135,5 +135,5 @@ To stay updated with the latest features and product add-ons, visit [Changelog](
       
 ## We are here to help you :headphones:
 
-* Got a query? we are available 24x7 to help. [Contact Us](support@lambdatest.com)
+* Got a query? we are available 24x7 to help. [Contact Us](support@lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=Nemo-Lambdatest-sample)
 * For more info, visit - [LambdaTest](https://www.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=Nemo-Lambdatest-sample)
