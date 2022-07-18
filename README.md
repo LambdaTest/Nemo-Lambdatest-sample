@@ -39,16 +39,17 @@ Before starting running your Selenium tests with NemoJS, ensure you have the fol
 $ brew install node
 ```
 
-2. Run the below command to download npm.
+2. Clone the repo.
 
 ``` js
-$ npm init
+git clone https://github.com/LambdaTest/Nemo-Lambdatest-sample.git
+cd Nemo-Lambdatest-sample
 ```
 
-3. To download NemoJS, run the following command in the terminal.
+3. Install the dependencies by executing the following command.
 
 ``` js
-$ npm install --save-dev nemo
+npm install
 ```
 
 4. To run your Selenium tests with NemoJS, you would need to set your LambdaTest username and access key in the environment variables. To get it, visit [Automation Dashboard](https://automation.lambdatest.com/?utm_source=github&utm_medium=repo&utm_campaign=Nemo-Lambdatest-sample) and click on the Key button from the top-right.
@@ -67,13 +68,7 @@ export LT_USERNAME="YOUR_LAMBDATEST_USERNAME"
 export LT_ACCESS_KEY="YOUR_LAMBDATEST_ACCESS_KEY"
 ```
 
-5. Install the dependencies by executing the following command.
-
-``` js
-npm install
-```
-
-6. Set the environment variables in `nemo.config.js` file with your LambdaTest Username and Access Key.
+5. Set the environment variables in `nemo.config.js` file with your LambdaTest Username and Access Key.
 
 ## Running The Single Test Case With NemoJS
 
