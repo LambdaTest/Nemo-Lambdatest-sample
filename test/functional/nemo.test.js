@@ -19,7 +19,7 @@ describe('@firstTest@', async function () {
     await this.nemo.view._waitVisible('name:li6', 5000);
     var page_title = await this.nemo.driver.getTitle();
     console.log("hello", page_title)
-    if (page_title === "Sample page - lambdatest.com"){
+    if (page_title === "Modern To-Do App | LambdaTest"){
       status = "passed";
     }
     else {
