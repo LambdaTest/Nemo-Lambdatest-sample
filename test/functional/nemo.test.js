@@ -10,7 +10,7 @@ describe('@firstTest@', async function () {
   it('should load a website', async function () {
     this.nemo.driver.manage().timeouts().implicitlyWait(5000);
     await this.nemo.driver.get(this.nemo.data.baseUrl);
-    await this.nemo.driver.get("https://lambdatest.github.io/sample-todo-app/");
+    await this.nemo.driver.get("https://www.testmuai.com/selenium-playground/todo-app/");
     await this.nemo.view._waitVisible('name:li1', 5000);
     await this.nemo.view._find('name:li1').click();
     await this.nemo.view._find('name:li2').click();
@@ -19,7 +19,7 @@ describe('@firstTest@', async function () {
     await this.nemo.view._waitVisible('name:li6', 5000);
     var page_title = await this.nemo.driver.getTitle();
     console.log("hello", page_title)
-    if (page_title === "Modern To-Do App | LambdaTest"){
+    if (page_title === "Selenium Grid Online | Run Selenium Test On Cloud"){
       status = "passed";
     }
     else {
