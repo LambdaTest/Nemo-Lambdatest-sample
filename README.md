@@ -13,7 +13,7 @@
 With TestMu AI (Formerly LambdaTest), you can run NemoJS tests with Selenium across real browsers and operating systems. This sample shows how to configure NemoJS Selenium tests to run on the TestMu AI cloud.
 
 - [Sign up on TestMu AI](https://www.testmuai.com/register/) (Formerly LambdaTest).
-- Follow the [TestMu AI Documentation](https://www.testmuai.com/support/docs/selenium-tests-with-nemojs/) for the full setup walkthrough.
+- Follow the [Run NemoJS tests with Selenium on TestMu AI](https://www.testmuai.com/support/docs/selenium-tests-with-nemojs/) for the full setup walkthrough.
 
 ### Prerequisites
 
